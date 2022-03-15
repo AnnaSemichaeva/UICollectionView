@@ -9,6 +9,7 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
    
+
     @IBOutlet private weak var countryNameLabel: UILabel!
     
     func configure(with countryName: String) {
