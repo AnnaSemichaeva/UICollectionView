@@ -19,6 +19,7 @@ class CollectionViewController: UICollectionViewController {
     }
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
+        print("Going to use \(dataSource.count) cells")
         return dataSource.count
     }
 
@@ -31,6 +32,10 @@ class CollectionViewController: UICollectionViewController {
             countryCell.configure(with: dataSource[indexPath.row])
             
             cell = countryCell
+            
+            print("Item created")
+        }else{
+            print("Error!")
         }
         
         
